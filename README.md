@@ -1,2 +1,2 @@
-# Algorithms-project-
-sorting algorithms
+# Algorithms
+Project: Benchmarking Sorting Algorithms
