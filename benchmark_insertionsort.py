@@ -35,6 +35,9 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
+    #add to array
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -48,6 +51,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -61,6 +66,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -74,6 +81,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -87,6 +96,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -100,6 +111,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -113,6 +126,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -126,6 +141,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -139,6 +156,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -152,6 +171,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -165,6 +186,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -178,6 +201,8 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -191,8 +216,25 @@ def benchmark_insertionsort():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     insertsort_avglist.append(average)
 
+    for r in range(num_runs):
+        # start timer
+        start_time = time.time()
+        ######## call insertion sort
+        insertionSort(alist13)
+        end_time = time.time()
+        time_elapsed= end_time - start_time
+        results.append(time_elapsed)
+        
+    b = sum(results)
+    average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
+    insertsort_avglist.append(average)
+    
     print(insertsort_avglist)
 
 benchmark_insertionsort()

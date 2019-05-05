@@ -32,6 +32,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
 
@@ -45,6 +47,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
 
@@ -58,6 +62,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -70,6 +76,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -82,6 +90,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -94,6 +104,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
 
@@ -107,6 +119,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -119,6 +133,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -131,6 +147,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -143,6 +161,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -155,6 +175,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -167,6 +189,8 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
     for r in range(num_runs):
@@ -179,8 +203,25 @@ def benchmark_bubble():# import time module
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     bubble_avglist.append(average)
 
-    return bubble_avglist
+    for r in range(num_runs):
+        # start timer
+        start_time = time.time()
+        ######## bubblesort
+        bubbleSort(alist13)
+        end_time = time.time()
+        time_elapsed= end_time - start_time
+        results.append(time_elapsed)
+    b = sum(results)
+    average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
+    bubble_avglist.append(average)    
+    print(bubble_avglist)
+
+    #return bubble_avglist
 
 benchmark_bubble()

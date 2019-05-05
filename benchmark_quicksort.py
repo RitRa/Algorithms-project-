@@ -63,6 +63,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -76,6 +77,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -89,6 +91,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -102,6 +105,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -115,6 +119,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -128,6 +133,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -141,6 +147,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -154,6 +161,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -167,6 +175,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -180,6 +189,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -193,6 +203,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -206,6 +217,7 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
     for r in range(num_runs):
@@ -219,8 +231,26 @@ def benchmark_quick():
         
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     quicksort_avglist.append(average)
 
+    for r in range(num_runs):
+        # start timer
+        start_time = time.time()
+        ######## call quick sort
+        quickSort(alist13)
+        end_time = time.time()
+        time_elapsed= end_time - start_time
+        results.append(time_elapsed)
+        
+    b = sum(results)
+    average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
+    quicksort_avglist.append(average)
+    
+    
     print(quicksort_avglist)
 
 benchmark_quick()

@@ -35,6 +35,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -47,6 +49,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -59,6 +63,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -71,6 +77,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -83,6 +91,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -95,6 +105,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -107,6 +119,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -119,6 +133,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -131,6 +147,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -143,6 +161,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -155,6 +175,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -167,6 +189,8 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
     for r in range(num_runs):
@@ -179,8 +203,24 @@ def benchmark_countingsort():
         results.append(time_elapsed)
     b = sum(results)
     average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
     countsort_avglist.append(average)
 
+    for r in range(num_runs):
+        # start timer
+        start_time = time.time()
+        ######## counting sort
+        counting_sort(alist13, 10000)
+        end_time = time.time()
+        time_elapsed= end_time - start_time
+        results.append(time_elapsed)
+    b = sum(results)
+    average = (b/num_runs)
+    # round to 3 decimals
+    average = round(average, 3)
+    countsort_avglist.append(average)
+    
     print(countsort_avglist)
 
 benchmark_countingsort()
